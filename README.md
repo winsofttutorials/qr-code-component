@@ -33,7 +33,7 @@ This is a design of a QR-Scan for Mobile and Desktop view.
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/winsofttutorials/qr-code-component-main.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://winsofttutorials.github.io/qr-code-component/)
 
 ## My process
 
