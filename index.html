@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Outfit:wght@300;500;700&family=Plus+Jakarta+Sans:wght@300;500;700&display=swap");
+      :root {
+        --White: hsl(0, 0%, 100%);
+        --Lightgray: hsl(212, 45%, 89%);
+        --Grayishblue: hsl(220, 15%, 55%);
+        --Darkblue: hsl(218, 44%, 22%);
+      }
+
+      body {
+        background: var(--White);
+        position: relative;
+        font-family: "Outfit", sans-serif;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: var(--Darkblue);
+      }
+      @media screen and (max-width: 1440px) {
+      }
+      main {
+        width: 1440px;
+        height: 600px;
+        background: var(--Lightgray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        margin: 50px auto;
+      }
+
+      .scan-frame {
+        width: 280px;
+        background: var(--White);
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .qr-codeImg {
+        width: 250px;
+        border-radius: 10px;
+      }
+
+      .scanMSG {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .scanMSG h1 {
+        font-size: 18px;
+        font-weight: 700;
+        width: 210px;
+        text-align: center;
+        color: var(--Darkblue);
+        margin: 20px auto 0px;
+      }
+
+      .scanMSG p {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--Grayishblue);
+        width: 214px;
+      }
+
+      @media screen and (max-width: 900px) {
+        main {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="scan-frame">
+        <img src="images/image-qr-code.png" class="qr-codeImg" alt="barcode" />
+        <div class="scanMSG">
+          <h1>Improve your front-end skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      <a href="https://www.frontendmentor.io?ref=challenge">
+        Frontend Mentor Challenge Coded by</a
+      >
+      <a href="#">IFIDI WONYENGIKURO EPHOD</a>
+    </div>
+  </body>
+</html>
