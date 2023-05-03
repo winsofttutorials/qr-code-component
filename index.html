@@ -28,7 +28,14 @@
         background: var(--White);
         position: relative;
         font-family: "Outfit", sans-serif;
+        min-height: 100vh;
+        background: var(--Lightgray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
       }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -37,33 +44,22 @@
       .attribution a {
         color: var(--Darkblue);
       }
-      @media screen and (max-width: 1440px) {
-      }
-      main {
-        width: 1440px;
-        height: 600px;
-        background: var(--Lightgray);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        margin: 50px auto;
-      }
 
       .scan-frame {
-        width: 280px;
+        max-width: 280px;
         background: var(--White);
-        padding: 15px 0px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 15px;
         text-align: center;
+        margin-bottom: 30px;
       }
 
       .qr-codeImg {
-        width: 250px;
+        width: 100%;
         border-radius: 10px;
       }
 
@@ -76,25 +72,19 @@
       }
 
       .scanMSG h1 {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
-        width: 210px;
+        max-width: 250px;
         text-align: center;
         color: var(--Darkblue);
         margin: 20px auto 0px;
       }
 
       .scanMSG p {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 400;
         color: var(--Grayishblue);
-        width: 214px;
-      }
-
-      @media screen and (max-width: 900px) {
-        main {
-          width: 100%;
-        }
+        max-width: 250px;
       }
     </style>
   </head>
@@ -111,7 +101,6 @@
         </div>
       </div>
     </main>
-
     <div class="attribution">
       <a href="https://www.frontendmentor.io?ref=challenge">
         Frontend Mentor Challenge Coded by</a
